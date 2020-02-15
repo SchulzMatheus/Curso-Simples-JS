@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sacred Books</title>
+    <style>
+         body {
+                    background-color:blackds;
+                    color: red;
+                    font: normal 10pt Arial;
+                    text-align: center;
+                    
+                    
+                    
+                }
+                h1 {    color: white;
+        
+                }
+                h2{
+                    color: purple;
+                    font:  16pt arial;
+                }
+                h3{
+                    color : yellow;
+                    font:  16pt arial;
+                
+                }
+                p{
+                    color: rgb(0, 255, 0);
+                    font: 10pt arial;
+                }
+                h10
+                {
+                    color: rgb(255, 0, 221);
+                    font: 9pt arial;
+                }
+                h4
+                {
+                    color: orange;
+                    font:  16pt arial;
+                }
+               
+    </style>
+</head>
+<body>     
+
+    <h1>Sacred Books</h1>
+    <h2>lvl 2 Sacred Books</h2>
+    <p>Select the one you wish!</p> </br>
+    <input type="button" value="Tome of Iron Will" onclick="iron()"> 
+    <input type="button" value="Red Lotus" onclick = "lotus()">
+    <input type="button" value="Meditation's flame" onclick = "flame()">
+    <input type="button" value="The Adversary" onclick = "adv()"> 
+    <input type="button" value="Mist-Peach-Bloom" onclick = "mist()">
+    <input type="button" value="Tale to Wolf Hunting" onclick = "tale()">
+    <input type="button" value="Under the Wall" onclick = "under()">
+    <input type="button" value="Guide to Wolf Hunting" onclick = "guide()"></br>
+    </br> <div id="rec"></div> </br>
+    <h3>lvl 3 Sacred Books</h3>
+    <p>Select the one you wish!</p> </br>
+    <input type="button" value="Forged Crimson" onclick="forged()">
+    <input type="button" value="Sunset Tales" onclick="sunset()">
+    <input type="button" value="The Mountain Pass" onclick="mountain()">
+    <input type="button" value="The Collapse" onclick="collapse()"> 
+    <input type="button" value="A Poet's Musings" onclick="poet()">
+    <input type="button" value="Song Of Farewell" onclick="farewell()">
+    <input type="button" value="Merriment" onclick="merriment()">
+    <input type="button" value="Tales Of Beauty" onclick="beauty()"> </br>
+    </br><div id="rec1"></div>
+    <h4>lvl 4 Sacred Books</h4>
+    <p>Select the one you wish!</p> </br>
+    <input type="button" value="Upheaval" onclick="up()">
+    <input type="button" value="South of the River" onclick="south()">
+    <input type="button" value="The Rose's Thorn" onclick="thorn()">
+    <input type="button" value="Destiny" onclick="destiny()"> 
+    <input type="button" value="Burning Affection" onclick="affection()">
+    <input type="button" value="Appetites of Spring" onclick="spring()">
+    <input type="button" value="Battle Tactics" onclick="tactics()"> </br>
+    </br><div id="rec2"></div>
+    <h4>lvl 5 Sacred Books</h4>
+    <p>Select the one you wish!</p>
+    <input type="button" value="The Wrath of Heaven" onclick="heaven()">
+    <input type="button" value="The Fragrance" onclick="fragrance()">
+    <input type="button" value="Parting Grief" onclick="grief()">
+    <input type="button" value="Rouge and Red Lips" onclick="lips()">
+    <input type="button" value="Endless Waves" onclick="waves()">
+    <input type="button" value="Gang of Hooligans" onclick="gang()">
+    <input type="button" value="Garden of Emptiness" onclick="garden()"> </br>
+    </br><div id="rec3"></div>
+    <h4>lvl 6 Sacred Books</h4>
+    <p>Select the one you wish!</p>
+    <input type="button" value="The Frostlands" onclick="frostlands()">
+    <input type="button" value="Hidden Dragon" onclick="dragon()">
+    <input type="button" value="Turning the Tide" onclick="tide()">
+    <input type="button" value="The Union" onclick="union()">
+    <input type="button" value="Fool's Enlightenment" onclick="enlightenment()">
+    <input type="button" value="Existential Woe" onclick="woe()">
+    <input type="button" value="The Creator" onclick="creator()">
+    </br><div id="rec4"></div>
+
+
+</br></br></br></br></br><h10> By: Mazekeen of purgatory - S008 </br> My Paypal for donations: matheusschulz47@gmail.com </h10></br></br></br></br>
+<input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcK4jq_cQJDE_lrWynR509D1IcyVejd1d9CG0s9_9nEVnhBlfn" alt="" text-align: center;>
+
+
+    <script>
+        {
+        var resolveH = 1400;
+        var celestialH = 1400
+        var flankerH = 1400
+        var firbolgH = 1400
+        var SoaringO = 1200
+        var SinfulO = 1200
+        var TomeO = 1200
+        var FlowerlessO = 1200
+        var H = "Hero's Orders"
+        var O = "Honors"
+        var IronO = 4800
+        var IronH = 2800
+        var LotusO = 2400
+        var LotusH = 5600
+        var FlameO = 4800
+        var FlameH = 2800
+        var AdvO = 0
+        var AdvH = 8400
+        var MistO = 4800
+        var MistH = 2800
+        var TaleO = 2400
+        var TaleH = 5600
+        var UnderO = 4800
+        var UnderH = 2800
+        var GuideO = 4800
+        var GuideH = 2800
+        var ForgedH = 19600
+        var ForgedO = 4800
+        var SunsetH = 16800
+        var SunsetO = 7200
+        var MountainH = 16800
+        var MountainO = 7200
+        var CollapseH = 8400
+        var CollapseO = 14400
+        var PoetH = 16800
+        var PoetO = 7200
+        var FarewellH = 8400
+        var FarewellO = 14400
+        var MerrimentH = 11200
+        var MerrimentO = 12000
+        var BeautyH = 11200
+        var BeautyO = 12000
+        var UpO = MountainO+FarewellO+CollapseO
+        var UpH = MountainH+FarewellH+CollapseH
+        var SouthO = CollapseO+MerrimentO+PoetO
+        var SouthH = CollapseH+MerrimentH+PoetH
+        var ThornO = TaleO+FarewellO+CollapseO
+        var ThornH = TaleH+FarewellH+CollapseH
+        var DestinyO = FarewellO+CollapseO+MerrimentO
+        var DestinyH = FarewellH+CollapseH+MerrimentH
+        var AffectionO = MountainO+TaleO+FarewellO
+        var AffectionH = MountainH+TaleH+FarewellH
+        var SpringO = MerrimentO+CollapseO+TaleO
+        var SpringH = MerrimentH+CollapseH+TaleH
+        var TacticsO = MerrimentO+MountainO+BeautyO
+        var TacticsH = MerrimentH+MountainH+BeautyH
+        var HeavenO = TacticsO+AffectionO+DestinyO
+        var HeavenH = TacticsH+AffectionH+DestinyH
+        var FragranceO = AffectionO+DestinyO+ThornO
+        var FragranceH = AffectionH+DestinyH+ThornH
+        var GriefO = DestinyO+ThornO+UpO
+        var GriefH = DestinyH+ThornH+UpH
+        var LipsO = ThornO+UpO+SpringO
+        var LipsH = ThornH+UpH+SpringH
+        var WavesO = UpO+SpringO+SouthO
+        var WavesH = UpH+SpringH+SouthH
+        var GangO = SpringO+SouthO+TacticsO
+        var GangH = SpringH+SouthH+TacticsH
+        var GardenO = SouthO+TacticsO+AffectionO
+        var GardenH = SouthH+TacticsH+AffectionH
+        }
+    function iron()
+    {
+       var rec = window.document.getElementById("rec")
+        rec.innerHTML = "You will need the following books: </br> 2x Resolve: 2800 Hero's Orders </br>2x Soaring Heart: 2400 Honors </br> 2x Sinful flame: 2400 Honors </br> You will need a total of: 2800 Hero's Orders and 4800 Honors"
+        rec.style.background = "black"
+    }
+    function lotus()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.innerHTML = "You will need the following books:</br> 2x sinful flame: 2400 Honors </br> 2x Celestial Giant: 2800 Hero's Orders </br> 2x Flanker's Tome: 2800 Hero's Orders </br> You will need a total of: 5600 Hero's Orders and 2400 Honors "
+        rec.style.background = "black"
+    }
+    function  flame()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var flameH = 2*resolveH
+        var flameO = 2*TomeO + 2*FlowerlessO
+        rec.innerHTML = `You will need the following books:</br> 2x Tome of grace: ${2*TomeO} Honors </br> 2x A Flowerless Plant: ${2*FlowerlessO} Honors </br> 2x Resolve: ${2*resolveH} Hero's Orders </br> You will need a total of: ${flameH} Hero's Orders and ${flameO} Honors`
+    }
+    function adv()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var advH = 2*celestialH + 2*flankerH + 2* firbolgH
+        var advO = 0
+        rec.innerHTML = `You will need the following books:</br> 2x Celestial Giant: ${2*celestialH} Hero's Orders </br> 2x Flanke's tome: ${flankerH*2} Hero's Orders </br> 2x Firbolg drudge: ${firbolgH} Hero's Orders</br> You will need a total of: ${advH} Hero's Orders and ${advO} Honors`
+    }
+    function mist()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var mistH = 2*celestialH
+        var mistO = 2*SoaringO + 2*SinfulO
+        rec.innerHTML = `You will need the following books:</br> 2x Soaring heart: ${2*SoaringO} ${O} </br> 2x Sinful Flame: ${2*SinfulO} ${O} </br> 2x Celestial Giant: ${2*celestialH} ${H}<br/> You will need a total of: ${mistH} Hero's Orders and ${mistO} Honors`
+    }
+    function tale()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var taleH = 2*flankerH + 2*firbolgH
+        var taleO = 2*TomeO
+        rec.innerHTML = `You will need the following books:</br> 2x Flanker's Tome: ${2*flankerH} ${H}</br> 2x Firbolg Drudge: ${2*firbolgH} ${H}</br> 2x Tome of grace: ${2*TomeO} ${O}</br> You will need a total of: ${taleH} ${H} and ${taleO} ${O}`
+    }
+    function under()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var underH = 2*firbolgH 
+        var underO = 2*TomeO + 2*FlowerlessO
+        rec.innerHTML = `You will need the following books:</br> 2x Firbolg Drudge: ${2*firbolgH} ${H}</br> 2x Tome of Grace: ${2*TomeO} ${O}</br> 2x A Flowerless Plant: ${2*FlowerlessO} ${O}</br> You will need a total of: ${underH} ${H} and ${underO} ${O} `
+    }
+    function guide()
+    {
+        var rec = window.document.getElementById("rec")
+        rec.style.background = "black"
+        var guideH = 2*resolveH 
+        var guideO = 2*SoaringO + 2*FlowerlessO
+        rec.innerHTML = `You will need the following books:</br> 2x A Flowerless plant: ${2*FlowerlessO} ${O}</br> 2x Resolve: ${2*resolveH} ${H}</br> 2x Soaring Heart: ${2*SoaringO} ${O}</br> You will need a total of: ${guideH} ${H} and ${guideO} ${O} `
+    }
+    function forged()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var forgedO = LotusO+AdvO+TaleO
+        var forgedH = LotusH+AdvH+TaleH
+        rec1.innerHTML = `You will need the following books: </br> 1x Red Lotus: ${LotusH} ${H} and ${LotusO} ${O} </br> 1x The Adversary: ${AdvH} ${H} and ${AdvO} ${O} </br> 1x Tale of the Peach Fan: ${TaleH} ${H} and ${TaleO} ${O} </br> You will need a total of: ${forgedH} ${H} and ${forgedO} ${O} `
+    }
+    function sunset()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var sunsetO = MistO+LotusO+AdvO
+        var sunsetH = MistH+LotusH+AdvH
+        rec1.innerHTML = `You will need the following books: </br> 1x Mist-Peach-Bloom: ${MistH} ${H} and ${MistO} ${O} </br> 1x Red Lotus: ${LotusH} ${H} and ${LotusO} ${O} </br> 1x The Adversary: ${AdvH} ${H} and ${AdvO} ${O} </br> You will need a total of: ${sunsetH} ${H} and ${sunsetO} ${O} `
+    }
+    function mountain()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var mountainO = AdvO+TaleO+UnderO
+        var mountainH = AdvH+TaleH+UnderH
+        rec1.innerHTML = `You will need the following books: </br> 1x The Adversary: ${AdvH} ${H} and ${AdvO} ${O} </br> 1x Tale of the Peach Fan: ${TaleH} ${H} and ${TaleO} ${O} </br> 1x Under the Wall: ${UnderH} ${H} and ${UnderO} ${O} </br> You will need a total of: ${mountainH} ${H} and ${mountainO} ${O} `
+    }
+    function collapse()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var collapseO = GuideO+IronO+MistO
+        var collapseH = GuideH+IronH+MistH
+        rec1.innerHTML = `You will need the following books: </br> 1x Guide to Wolf Hunting: ${GuideH} ${H} and ${GuideO} ${O} </br> 1x Tome of Iron Will: ${IronH} ${H} and ${IronO} ${O} </br> 1x Mist-Peach-Bloom: ${MistH} ${H} and ${MistO} ${O} </br> You will need a total of: ${collapseH} ${H} and ${collapseO} ${O} `
+    }
+    function poet()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var poetO = MistO+LotusO+AdvO
+        var poetH = MistH+LotusH+AdvH
+        rec1.innerHTML = `You will need the following books: </br> 1x Mist-Peach-Bloom: ${MistH} ${H} and ${MistO} ${O} </br> 1x Red Lotus: ${LotusH} ${H} and ${LotusO} ${O} </br> 1x The Adversary: ${AdvH} ${H} and ${AdvO} ${O} </br> You will need a total of: ${poetH} ${H} and ${poetO} ${O}`
+    }
+    function farewell()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var farewellO = UnderO+FlameO+GuideO
+        var farewellH = UnderH+FlameH+GuideH
+        rec1.innerHTML = `You will need the following books: </br> 1x Under the Wall: ${UnderH} ${H} and ${UnderO} ${O} </br> 1x Meditation's Flame: ${FlameH} ${H} and ${FlameO} ${O} </br> 1x Guide to Wolf Hunting: ${GuideH} ${H} and ${GuideO} ${O} </br> You will need a total of: ${farewellH} ${H} and ${farewellO} ${O} `
+    }
+    function merriment()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var merrimentO = IronO+MistO+LotusO
+        var merrimentH = IronH+MistH+LotusH
+        rec1.innerHTML = `You will need the following books: </br> 1x Tome of Iron Will: ${IronH} ${H} and ${IronO} ${O} </br> 1x Mist-Peach-Bloom: ${MistH} ${H} and ${MistO} ${O} </br> 1x Red Lotus: ${LotusH} ${H} and ${LotusO} ${O} </br> You will need a total of: ${merrimentH} ${H} and ${merrimentO} ${O} `
+    }
+    function beauty()
+    {
+        var rec = window.document.getElementById("rec1")
+        rec.style.background = "black"
+        var beautyO = TaleO+UnderO+FlameO
+        var beautyH = TaleH+UnderH+FlameH
+        rec1.innerHTML = `You will need the following books: </br> 1x Tale of the Peach Fan: ${TaleH} ${H} and ${TaleO} ${O} </br> 1x Under the Wall: ${UnderH} ${H} and ${UnderO} ${O} </br> 1x Meditation's Flame: ${FlameH} ${H} and ${FlameO} ${O} </br> You will need a total of: ${beautyH} ${H} and ${beautyO} ${O} `
+    }
+    function up()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var upO = MountainO+FarewellO+CollapseO
+        var upH = MountainH+FarewellH+CollapseH
+        rec2.innerHTML = `You will need the following books:</br> 1x The Mountain Pass: ${MountainH} ${H} and ${MountainO} ${O} </br> 1x Song of Farewell: ${FarewellH} ${H} and ${FarewellO} ${O} </br> 1x The Collapse: ${CollapseH} ${H} and ${CollapseO} ${O} </br> You will need a total of: ${upH} ${H} and ${upO} ${O} `
+    }
+    function south()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var southO = CollapseO+MerrimentO+PoetO
+        var southH = CollapseH+MerrimentH+PoetH
+        rec2.innerHTML = `You will need the following books:</br> 1x The Collapse: ${CollapseO} ${O} and ${CollapseH} ${H} </br> 1x Merriment: ${MerrimentH} ${H} and ${MerrimentO} ${O} </br> 1x A Poet's Musings: ${PoetH} ${H} and ${PoetO} ${O} </br> You will need a total of: ${southH} ${H} and ${southO} ${O} `
+    }
+    function thorn()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var thornO = TaleO+FarewellO+CollapseO
+        var thornH = TaleH+FarewellH+CollapseH
+        rec2.innerHTML = `You will need the following books:</br> 1x Tales of Beauty: ${BeautyH} ${H} ${BeautyO} ${O} </br> 1x Song of Farewell: ${FarewellH} ${H} and ${FarewellO} ${O} </br> 1x The Collapse: ${CollapseH} ${H} and ${CollapseO} ${O} </br> You will need a total of: ${thornH} ${H} and ${thornO} ${O} `
+    }
+    function destiny()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var destinyO = FarewellO+CollapseO+MerrimentO
+        var destinyH = FarewellH+CollapseH+MerrimentH
+        rec2.innerHTML = `You will need the following books:</br> 1x Song of Farewell: ${FarewellH} ${H} and ${FarewellO} ${O} </br> 1x The Collapse: ${CollapseH} ${H} and ${CollapseO} ${O} </br> 1x Merriment: ${MerrimentH} ${H} and ${MerrimentO} ${O} </br> You will need a total of: ${destinyH} ${H} and ${destinyO} ${O}`
+    }
+    function affection()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var affectionO = MountainO+TaleO+FarewellO
+        var affectionh = MountainH+TaleH+FarewellH
+        rec2.innerHTML = `You will need the following books:</br> 1x The Mountain Pass: ${MountainH} ${H} and ${MountainO} ${O} </br> 1x Tales of Beauty: ${BeautyH} ${H} and ${BeautyO} ${O} </br> 1x Song of Farewell: ${FarewellH} ${H} and ${FarewellO} ${O} </br> You will need a total of: ${affectionh} ${H} and ${affectionO} ${O} `
+    }
+    function spring()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var springO = MerrimentO+CollapseO+TaleO
+        var springh = MerrimentH+CollapseH+TaleH
+        rec2.innerHTML = `You will need the following books:</br> 1x Merriment: ${MerrimentH} ${H} and ${MerrimentO} ${O} </br> 1x The Collapse: ${CollapseH} ${H} and ${CollapseO} ${O} </br> 1x Tales of Beauty: ${TaleH} ${H} and ${TaleO} ${O} </br> You will need a total of: ${springh} ${H} and ${springO} ${O} `
+    }
+    function tactics ()
+    {
+        var rec = window.document.getElementById("rec2")
+        rec.style.background = "black"
+        var tacticsO = MerrimentO+MountainO+BeautyO
+        var tacticsH = MerrimentH+MountainH+BeautyH
+        rec2.innerHTML = `You will need the following books:</br> 1x Merriment: ${MerrimentH} ${H} and ${MerrimentO} ${O} </br> 1x The Mountain Pass: ${MountainH} ${H} and ${MountainO} ${O} </br> 1x Tales of Beauty: ${TaleH} ${H} and ${TaleO} ${O} </br> You will need a total of: ${tacticsH} ${H} and ${tacticsO} ${O} `
+    }
+    function heaven()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var heavenO = TacticsO+AffectionO+DestinyO
+        var heavenH = TacticsH+AffectionH+DestinyH
+        rec3.innerHTML = `You will need the following books:</br> 1x Battle Tactics: ${TacticsH} ${H} and ${TacticsO} ${O} </br> 1x Burning Affection: ${AffectionH} ${H} and ${AffectionO} ${O} </br> 1x Destiny: ${DestinyH} ${H} and ${DestinyO} ${O} </br> You will need a total of: ${heavenH} ${H} and ${heavenO} ${O} `
+    }
+    function fragrance()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var fragranceO = AffectionO+DestinyO+ThornO
+        var fragranceH = AffectionH+DestinyH+ThornH
+        rec3.innerHTML = `You will need the following books:</br> 1x Burning Affection: ${AffectionH} ${H} and ${AffectionO} ${O} </br> 1x Destiny: ${DestinyH} ${H} and ${DestinyO} ${O} </br> 1x The Rose's Thorn: ${ThornH} ${H} and ${ThornO} ${O} </br> You will need a total of: ${fragranceH} ${H} and ${fragranceO} ${O} `
+    }
+    function grief()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var griefO = DestinyO+ThornO+UpO
+        var griefH = DestinyH+ThornH+UpH
+        rec3.innerHTML = `You will need the following books:</br> 1x Destiny: ${DestinyH} ${H} and ${DestinyO} ${O} </br> 1x The Rose's Thorn: ${ThornH} ${H} and ${ThornO} ${O} </br> 1x Upheaval: ${UpH} ${H} and ${UpO} ${O} </br> You will need a total of: ${griefH} ${H} and ${griefO} ${O} `
+    }
+    function lips()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var lipsO = ThornO+UpO+SpringO
+        var lipsH = ThornH+UpH+SpringH
+        rec3.innerHTML = `You will need the following books:</br> 1x The Rose's Thorn: ${ThornH} ${H} and ${ThornO} ${O} </br> 1x Upheaval: ${UpH} ${H} and ${UpO} ${O} </br> 1x Appetites of Spring: ${SpringH} ${H} and ${SpringO} ${O} </br> You will need a total of: ${lipsH} ${H} and ${lipsO} ${O} `
+    }
+    function waves()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var wavesO = UpO+SpringO+SouthO
+        var wavesH = UpH+SpringH+SouthH
+        rec3.innerHTML = `You will need the following books:</br> 1x Upheaval: ${UpH} ${H} and ${UpO} ${O} </br> 1x : ${H} ${H} and ${O} ${O} </br> 1x Appetites of Spring: ${SpringH} ${H} and ${SpringO} ${O} </br> You will need a total of: ${wavesH} ${H} and ${wavesO} ${O} `
+    }
+    function gang()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var gangO = SpringO+SouthO+TacticsO
+        var gangH = SpringH+SouthH+TacticsH
+        rec3.innerHTML = `You will need the following books:</br> 1x Appetites of Spring: ${SpringH} ${H} and ${SpringO} ${O} </br> 1x South of the River: ${SouthH} ${H} and ${SouthO} ${O} </br> 1x Battle Tactics: ${TacticsH} ${H} and ${TacticsO} ${O} </br> You will need a total of: ${gangH} ${H} and ${gangO} ${O} `
+    }
+    function garden()
+    {
+        var rec = window.document.getElementById("rec3")
+        rec.style.background = "black"
+        var gardenO = SouthO+TacticsO+AffectionO
+        var gardenH = SouthH+TacticsH+AffectionH
+        rec3.innerHTML = `You will need the following books:</br> 1x South of the River: ${SouthH} ${H} and ${SouthO} ${O} </br> 1x Battle Tactics: ${TacticsH} ${H} and ${TacticsO} ${O} </br> 1x Burning Affection: ${AffectionH} ${H} and ${AffectionO} ${O} </br> You will need a total of: ${gardenH} ${H} and ${gardenO} ${O} `
+    }
+    function frostlands ()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var frostlandsO = HeavenO+FragranceO+GriefO
+        var frostlandsH = HeavenH+FragranceH+GriefH
+        rec4.innerHTML = `You will need the following books:</br> 1x The Wrath of Heaven: ${HeavenH} ${H} and ${HeavenO} ${O} </br> 1x The Fragrance: ${FragranceH} ${H} and ${FragranceO} ${O} </br> 1x Parting Grief: ${GriefH} ${H} and ${GriefO} ${O} </br> You will need a total of: ${frostlandsH} ${H} and ${frostlandsO} ${O} `
+    }
+    function dragon()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var dragonO = FragranceO+GriefO+LipsO
+        var dragonH = FragranceH+GriefH+LipsH
+        rec4.innerHTML = `You will need the following books:</br> 1x The Fragrance: ${FragranceH} ${H} and ${FragranceO} ${O} </br> 1x Parting Grief: ${GriefH} ${GriefH} and ${O} ${O} </br> 1x Rouge and Red Lips: ${LipsH} ${H} and ${LipsO} ${O} </br> You will need a total of: ${dragonH} ${H} and ${dragonO} ${O} `
+    }
+    function tide()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var tideO = GriefO+LipsO+WavesO
+        var tideH = GriefH+LipsH+WavesH
+        rec4.innerHTML = `You will need the following books:</br> 1x Parting Grief: ${GriefH} ${H} and ${GriefO} ${O} </br> 1x Rouge and Red Lips: ${LipsH} ${H} and ${LipsO} ${O} </br> 1x Endless Waves: ${WavesH} ${H} and ${WavesO} ${O} </br> You will need a total of: ${tideH} ${H} and ${tideO} ${O} `
+    }
+    function union()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var unionO = LipsO+WavesO+GangO
+        var unionH = LipsH+WavesH+GangH
+        rec4.innerHTML = `You will need the following books:</br> 1x Rouge and Red Lips: ${LipsH} ${H} and ${LipsO} ${O} </br> 1x Endless Waves: ${WavesH} ${H} and ${WavesO} ${O} </br> 1x Gang of Hooligans: ${GangH} ${H} and ${GangO} ${O} </br> You will need a total of: ${unionH} ${H} and ${unionO} ${O} `
+    }
+    function enlightenment()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var enlightenmentO = WavesO+GangO+GardenO
+        var enlightenmentH = WavesH+GangH+GardenH   
+        rec4.innerHTML = `You will need the following books:</br> 1x Endless Waves: ${WavesH} ${H} and ${WavesO} ${O} </br> 1x Gang of Hooligans: ${GangH} ${H} and ${GangO} ${O} </br> 1x Garden of Emptiness: ${GardenH} ${H} and ${GardenO} ${O} </br> You will need a total of: ${enlightenmentH} ${H} and ${enlightenmentO} ${O} `
+    }
+    function woe()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var woeO = GangO+GardenO+HeavenO
+        var woeH = GangH+GardenH+HeavenH
+        rec4.innerHTML = `You will need the following books:</br> 1x Gang of Hooligans: ${GangH} ${H} and ${GangO} ${O} </br> 1x Garden of Emptiness: ${GardenH} ${H} and ${GardenO} ${O} </br> 1x The Wrath of Heaven: ${HeavenH} ${H} and ${HeavenO} ${O} </br> You will need a total of: ${woeH} ${H} and ${woeO} ${O} `
+    }
+    function creator()
+    {
+        var rec = window.document.getElementById("rec4")
+        rec.style.background = "black"
+        var creatorO = HeavenO+WavesO+GardenO
+        var creatorH = HeavenH+WavesH+GardenH
+        rec4.innerHTML = `You will need the following books:</br> 1x The Wrath of Heaven: ${HeavenH} ${H} and ${HeavenO} ${O} </br> 1x Endless Waves: ${WavesH} ${H} and ${WavesO} ${O} </br> 1x Garden of Emptiness: ${GardenH} ${H} and ${GardenO} ${O} </br> You will need a total of: ${creatorH} ${H} and ${creatorO} ${O} `
+    }
+
+    
+    </script>
+    
+</body>
+</html>

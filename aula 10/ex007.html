@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculadora</title>
+        <style>
+                body {
+                    background-color: rgb(240, 60, 210);
+                    color: white;
+                    font: normal 10pt Arial;
+                }
+                h1 {    color: yellow;
+        
+                }
+            </style>
+
+</head>
+<body>
+</script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Soma" onclick="soma()"><br/>
+    <div id="sum">Resultado</div><br/>
+    <input type="number" name="txtn3" id="txtn3"> -
+    <input type="number" name="txtn4" id="txtn4"> 
+    <input type="button" value="Subtrair" onclick="subtração()"><br/>
+    <div id="sub">Resultado</div><br/>
+    <input type="number" name="txtn5" id="txtn5"> *
+    <input type="number" name="txtn6" id="txtn6"> 
+    <input type="button" value="Multiplicar" onclick="multiplicação()"><br/>
+    <div id="mul">Resultado</div><br/>
+    <input type="number" name="txtn7" id="txtn7"> /
+    <input type="number" name="txtn8" id="txtn8"> 
+    <input type="button" value="Dividir" onclick="dividir()"><br/>
+    <div id="div">Resultado</div><br/>
+    <input type="number" name="txtn9" id="txtn9"> 
+    <input type="number" name="txtn9" id="txtn10"> 
+    <input type="button" value="potencia" onclick="potencia()"><br/>
+    <div id="rad">Resultado</div><br/>
+    <input type="number" name="txtn9" id="txtn11"> 
+    <input type="button" value="raiz" onclick="raiz()"><br/>
+    <div id="raiz">Resultado</div>
+
+    <script>
+         
+          function soma() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById("txtn2")
+            var res = window.document.getElementById("sum")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre os numeros ${n1} e ${n2} é igual a ${s}`
+            res.style.background = 'green'
+
+    }
+          function subtração()
+    {
+            var tn1 = window.document.getElementById("txtn3")
+            var tn2 = window.document.getElementById("txtn4")
+            var res = window.document.getElementById("sub")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 - n2
+            res.innerHTML = `A diferença entre os numeros ${n1} e ${n2} é igual a ${s}`
+            res.style.background = 'green'
+    }
+          function multiplicação()
+    {
+            var tn1 = window.document.getElementById("txtn5")
+            var tn2 = window.document.getElementById("txtn6")
+            var res = window.document.getElementById("mul")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            res.innerHTML = `A multiplicação entre os numeros ${n1} e ${n2} é igual a ${s}`
+            res.style.background = 'green'
+    }
+          function dividir()
+    {
+            var tn1 = window.document.getElementById("txtn7")
+            var tn2 = window.document.getElementById("txtn8")
+            var res = window.document.getElementById("div")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 / n2
+            res.innerHTML = `A divisão entre os numeros ${n1} e ${n2} é igual a ${s}`
+            res.style.background = 'green'
+    }
+          function potencia()
+    {
+            var tn1 = window.document.getElementById("txtn9")
+            var tn2 = window.document.getElementById("txtn10")
+            var res = window.document.getElementById("rad")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 ** n2
+            res.innerHTML = `O numero ${n1} elevado a ${n2} é igual a ${s}`
+            res.style.background = 'green'
+    }
+          function raiz()
+    {
+            var tn1 = window.document.getElementById("txtn11")
+            var res = window.document.getElementById("raiz")
+            var n1 = Number(tn1.value)
+            var r = 0.5
+            var s = n1**r
+            res.innerHTML = `A raiz de ${n1} é igual a ${s}`
+            res.style.background = 'green'
+    }
+
+  </script>
+
+</body>
+</html>

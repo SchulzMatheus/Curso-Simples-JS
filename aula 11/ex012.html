@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade
+
+    </title>
+</head>
+<body>
+    input
+    <h1>Nacionalidade Da Galera Meu Bro</h1>
+    Informe o seu país <input type="text" name="" id="nacionalidade">
+    <input type="button" value="saber" onclick="gerador()">
+    <div id="res">Sua nacionalidade</div>
+    <script>
+    function gerador()
+    {
+            var txt = window.document.getElementById('nacionalidade')
+           var res = window.document.getElementById('res')
+           var pais = (txt.value)
+            res.innerHTML = `Você é do país ${pais},`
+            if (pais == 'brasil' || 'Brasil' || 'Brazil' || 'Brazil')
+            {
+                res.innerHTML += `Você é <strong>brasileiro</strong>`
+            }
+            else
+            {
+                res.innerHTML += 'Você é estrangeiro'
+            }
+
+            
+    }
+     
+    </script>
+</body>
+</html>
